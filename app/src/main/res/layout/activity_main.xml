@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bruno.tourguide.MainActivity"
+    android:background="@color/indigo_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_hotel">
+        <TextView
+            style="@style/MainStyle"
+            android:id="@+id/hotels"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_hotels" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_transportation">
+        <TextView
+            style="@style/MainStyle"
+            android:id="@+id/parks"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_parks" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_entertainment">
+        <TextView
+            style="@style/MainStyle"
+            android:id="@+id/entertainment"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_entertainment" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/category_restaurants">
+        <TextView
+            style="@style/MainStyle"
+            android:id="@+id/restaurant"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="@string/category_restaurants" />
+    </FrameLayout>
+    </LinearLayout>
+</ScrollView>
